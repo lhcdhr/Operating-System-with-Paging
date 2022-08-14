@@ -1,0 +1,15 @@
+void mem_init();
+void updateLRU(int index);
+int leastRecentUsed();
+void showLRU();
+void mem_reset();
+void var_reset();
+char *mem_get_value(char *var);
+char *mem_get_value_by_index(int index);
+void mem_clean(char *var_in);
+int mem_set_value(int index, char *value_in);
+int var_set_value(char *var_in, char *value_in);
+char *var_get_value(char *var_in);
+void showMemory();
+void showVariable();
+int empty_spot();

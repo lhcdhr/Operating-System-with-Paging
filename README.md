@@ -5,7 +5,8 @@ A simple operating system implemented with C.
 - To compile, use command `make mysh framesize=X varmemsize=Y`, with `X` corresponding to the size of the frame store, and `Y` representing the size of the variable store in the OS Shell memory. 
 - To run the OS in interactive mode, use `./mysh`. 
 - The OS also supports batch mode that takes a file as input, use `./mysh < input.txt`.
-- Supports basic command, including `help` `quit` `print` `set` `echo` `run` `exec` `my_ls` `resetmem`, and the commands are case sensitive.
+- Supports basic commands, including `help` `quit` `print` `set` `echo` `run` `exec` `my_ls` `resetmem`, and the commands are case sensitive.
+- Memory management follows demand paging with LRU page replacement policy.
 
 ## Paging
 - The memory management for this simple OS is based on demand paging, following LRU replacement policy.

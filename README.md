@@ -6,7 +6,7 @@ A simple operating system implemented with C.
 - To run the OS in interactive mode, use `./mysh`. 
 - The OS also supports batch mode that takes a file as input, use `./mysh < input.txt`.
 - Supports basic commands, including `help` `quit` `print` `set` `echo` `run` `exec` `my_ls` `resetmem`, and the commands are case sensitive.
-- Memory management follows demand paging with LRU page replacement policy.
+- Memory management follows demand paging with LRU page replacement policy. The only supported scheduling policy is Round Robin.
 
 ## Paging
 - The memory management for this simple OS is based on demand paging, following LRU replacement policy.
